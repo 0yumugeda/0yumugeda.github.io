@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*.box1{width: 300px; height: 300px; border: 1px black solid; background-image: linear-gradient( 
+			60deg,red,orange,yellow,green,cyan,blue,violet);}*/
+			.box1{width: 300px; height: 300px;margin-left: 600px; margin-top: 250px; border: 1px black solid; background-image: radial-gradient( 
+			white,red,orange,yellow,green,transparent,transparent,transparent);}
+			
+			body {
+				background-color: black;
+			}
+			/*渐变进度条*/
+			/*.box1 {
+				width: 300px;
+				height: 30px;
+				border: 1px black solid;
+				margin: 100px;
+				background-image: linear-gradient(to right top, white 25%, green 25%, green 50%, white 50%, white 75%, green 75%);
+				background-size: 30px;
+				animation: move infinite 4s linear;
+			}
+			
+			@keyframes move {
+				0% {
+					background-position: 0, 0;
+				}
+				100% {
+					background-position: 300px, 0;
+				}
+			}*/
+			
+			.snow-container {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				pointer-events: none;
+				z-index: 100001;
+			}
+		</style>
+
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.7.2/jquery.min.js"></script>
+
+		<script src="http://itbyc.com/templets/yang/js/snow.js"></script>
+
+		<div class="snow-container"></div>
+	</head>
+	<body>
+		<div class="box1"></div>
+
+		<!--
+			1.线性渐变 -> linear-gradient是值,需要添加到background-image属性上
+			注:渐变的0度是在页面下面,正值会按照顺时针旋转,负值按照逆时针旋转
+			2.径向渐变 -> radial-gradient
+			
+			渐变的进度条
+		-->
+	</body>
+
+</html>
